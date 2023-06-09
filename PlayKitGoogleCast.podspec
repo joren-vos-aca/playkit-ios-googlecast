@@ -4,7 +4,7 @@ suffix = '.0000'   # Dev mode
 Pod::Spec.new do |s|
   
   s.name             = 'PlayKitGoogleCast'
-  s.version          = '1.5.3' + suffix
+  s.version          = '1.5.4' + suffix
   s.summary          = 'PlayKitGoogleCast -- Google cast framework for iOS'
   s.homepage         = 'https://github.com/joren-vos-aca/playkit-ios-googlecast'
   s.license          = { :type => 'AGPLv3', :file => 'LICENSE' }
@@ -16,11 +16,6 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.ios.deployment_target = '12.0'
-
-  s.xcconfig = {
-### The following is required for Xcode 12 (https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios)
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
 
   s.dependency 'google-cast-sdk', '4.7.0'
 end
