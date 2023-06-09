@@ -31,7 +31,6 @@ import UIKit
         guard ks != nil,
             ks?.isEmpty == false
             else {
-                PKGCLog.warning("Trying to set nil or empty string to ks")
                 return self
         }
         

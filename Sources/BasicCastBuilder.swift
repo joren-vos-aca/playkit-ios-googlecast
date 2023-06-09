@@ -75,7 +75,6 @@ import GoogleCast
     @nonobjc public func set(contentId: String?) -> Self {
         
         guard contentId != nil, contentId?.isEmpty == false else {
-                PKGCLog.warning("Trying to set nil or empty string to content id")
                 return self
         }
         
@@ -104,7 +103,6 @@ import GoogleCast
     @nonobjc public func set(contentType: String?) -> Self {
         
         guard let theContentType = contentType, theContentType.isEmpty == false else {
-                PKGCLog.debug("Trying to set nil or an empty string to contentType")
                 return self
         }
         
@@ -120,7 +118,6 @@ import GoogleCast
     @nonobjc public func set(metaData: GCKMediaMetadata?) -> Self{
         
         guard metaData != nil else {
-                PKGCLog.warning("Trying to set nil to metaData")
                 return self
         }
         
@@ -136,7 +133,6 @@ import GoogleCast
     @nonobjc public func set(adBreaks: [GCKAdBreakInfo]?) -> Self {
         
         guard adBreaks != nil else {
-            PKGCLog.debug("Trying to set nil to adBreaks")
             return self
         }
         
@@ -152,7 +148,6 @@ import GoogleCast
     @nonobjc public func set(adBreakClips: [GCKAdBreakClipInfo]?) -> Self {
         
         guard adBreakClips != nil else {
-            PKGCLog.debug("Trying to set nil to adBreakClips")
             return self
         }
         
@@ -179,7 +174,6 @@ import GoogleCast
     @nonobjc public func set(mediaTracks: [GCKMediaTrack]?) -> Self {
         
         guard mediaTracks != nil else {
-            PKGCLog.debug("Trying to set nil to mediaTracks")
             return self
         }
         
@@ -195,7 +189,6 @@ import GoogleCast
     @nonobjc public func set(textTrackStyle: GCKMediaTextTrackStyle?) -> Self {
         
         guard textTrackStyle != nil else {
-            PKGCLog.debug("Trying to set nil to textTrackStyle")
             return self
         }
         
@@ -213,7 +206,6 @@ import GoogleCast
     @nonobjc public func set(adTagURL: String?) -> Self {
         
         guard adTagURL != nil, adTagURL?.isEmpty == false else {
-            PKGCLog.debug("Trying to set nil or empty string to adTagURL")
             return self
         }
         
@@ -229,7 +221,6 @@ import GoogleCast
     @nonobjc public func set(webPlayerURL: String?) -> Self {
         
         guard webPlayerURL != nil, webPlayerURL?.isEmpty == false else {
-            PKGCLog.warning("Trying to set nil or empty string to webPlayerURL")
             return self
         }
         
@@ -245,7 +236,6 @@ import GoogleCast
     @nonobjc public func set(partnerID: String?) -> Self {
         
         guard partnerID != nil, partnerID?.isEmpty == false else {
-            PKGCLog.warning("Trying to set nil or empty string to partnerID")
             return self
         }
         
@@ -261,7 +251,6 @@ import GoogleCast
     @nonobjc public func set(uiconfID: String?) -> Self {
         
         guard uiconfID != nil, uiconfID?.isEmpty == false else {
-            PKGCLog.warning("Trying to set nil or empty string to uiconfID")
             return self
         }
 

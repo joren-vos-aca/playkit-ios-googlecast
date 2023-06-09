@@ -36,7 +36,6 @@ import UIKit
         
         guard initObject != nil
             else {
-                PKGCLog.warning("Trying to set nil to initObject")
                 return self
         }
         self.initObject = initObject
@@ -53,7 +52,6 @@ import UIKit
         guard format != nil,
             format?.isEmpty == false
             else {
-                PKGCLog.warning("Trying to set nil or empty string to format")
                 return self
         }
         

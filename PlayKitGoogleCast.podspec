@@ -23,6 +23,5 @@ Pod::Spec.new do |s|
   }
 
   s.dependency 'google-cast-sdk', '4.7.0'
-  s.dependency 'XCGLogger', '7.0.0'
 end
 
