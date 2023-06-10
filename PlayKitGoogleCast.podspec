@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
 
-  s.dependency 'google-cast-sdk', '4.7.1'
+  s.dependency 'google-cast-sdk-dynamic-xcframework-no-bluetooth', '4.7.1'
 end
 
